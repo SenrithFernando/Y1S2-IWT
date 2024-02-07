@@ -1,0 +1,20 @@
+1. `<html>`: Defines the root of an HTML document.
+2. `<head>`: Contains meta-information about the document.
+3. `<title>`: Sets the title of the document.
+4. `<body>`: Contains the visible content of the document.
+5. `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Defines headings of varying sizes.
+6. `<p>`: Defines a paragraph.
+7. `<a>`: Defines a hyperlink.
+8. `<img>`: Embeds an image.
+9. `<div>`: Defines a division or section in a document.
+10. `<span>`: Defines a section in a document for styling purposes.
+11. `<ul>`: Defines an unordered list.
+12. `<ol>`: Defines an ordered list.
+13. `<li>`: Defines a list item.
+14. `<table>`: Defines a table.
+15. `<tr>`: Defines a table row.
+16. `<th>`: Defines a table header cell.
+17. `<td>`: Defines a table data cell.
+18. `<form>`: Defines an HTML form for user input.
+19. `<input>`: Defines an input control.
+20. `<button>`: Defines a clickable button.
