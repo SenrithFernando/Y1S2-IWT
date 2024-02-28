@@ -1,0 +1,17 @@
+What are the uses of JavaScript in web development?
+    to add actions and animation on web pages 
+    validation part 
+
+Explain the different methods to create a variable in JavaScript by using examples.
+    var age;
+    var smallNumber;
+    var initial
+    var name
+    var isPassed;
+    var num1, num2, num3;
+
+What is the difference between alert box, prompt box and confirm box?
+    alert box - it use to show alerts or show massges 
+    prompt box - it use to to get input value
+    congirm box - it use to get insformation yes no desision
+
