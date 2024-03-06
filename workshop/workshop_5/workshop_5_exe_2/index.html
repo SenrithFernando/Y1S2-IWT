@@ -12,21 +12,22 @@
 
 <body>
 
-    <!-- <form action="" method="post"> -->
-    <fieldset>
-        <legend>Check Password</legend>
-        <span>Password</span> <br>
-        <input type="password" id="password"> <br>
-        <span>Re Password</span> <br>
-        <input type="password" id="repassword"> <br>
-        <p id="para"></p>
-        <br><br>
-        <!-- <input type="button" value="submit" id="submit"> -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Check Password</legend>
+            <span>Password</span> <br>
+            <input type="password" id="password"> <br>
+            <span>Re Password</span> <br>
+            <input type="password" id="repassword"> <br>
+            <p style="color: red;" id="para"></p>
+            <p style="color: green;" id="para1"></p>
+            <br><br>
+            <!-- <input type="button" value="submit" id="submit"> -->
 
-        <button style="background-color: yellow; color: red;" name="btn1" onclick="check('btn1')">Submit</button>
+            <button style="background-color: yellow; color: red;" name="btn1" onclick="check('btn1')">Submit</button>
 
-    </fieldset>
-    <!-- </form> -->
+        </fieldset>
+    </form>
 
 
     <script>
@@ -34,10 +35,19 @@
             if (name == "btn1") {
                 var pw1 = document.getElementById("password").value;
                 var pw2 = document.getElementById("repassword").value;
-                if (pw1 == pw2) {
-                    document.getElementById("para").innerHTML = "valid"
+
+                if (pw1 == "" || pw2 == "") {
+                    // document.getElementById("para").innerHTML = "invalid"
+                    // document.getElementById("para1").innerHTML = ""
+                    alert("Invalid");
+                } else if (pw1 == pw2) {
+                    // document.getElementById("para1").innerHTML = "valid"
+                    // document.getElementById("para").innerHTML = ""
+                    alert("Valid")
                 } else {
-                    document.getElementById("para").innerHTML = "invalid"
+                    // document.getElementById("para").innerHTML = "invalid"
+                    // document.getElementById("para1").innerHTML = ""
+                    alert("Invalid");
                 }
 
 
