@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <form action="" method="post"> -->
+    <fieldset>
+        <legend>Check Password</legend>
+        <span>Password</span> <br>
+        <input type="password" id="password"> <br>
+        <span>Re Password</span> <br>
+        <input type="password" id="repassword"> <br>
+        <p id="para"></p>
+        <br><br>
+        <!-- <input type="button" value="submit" id="submit"> -->
+
+        <button style="background-color: yellow; color: red;" name="btn1" onclick="check('btn1')">Submit</button>
+
+    </fieldset>
+    <!-- </form> -->
+
+
+    <script>
+        function check(name) {
+            if (name == "btn1") {
+                var pw1 = document.getElementById("password").value;
+                var pw2 = document.getElementById("repassword").value;
+                if (pw1 == pw2) {
+                    document.getElementById("para").innerHTML = "valid"
+                } else {
+                    document.getElementById("para").innerHTML = "invalid"
+                }
+
+
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var letters = ["A", "B", "C", "D"];
+        letters[4] = 10;
+
+        document.write(letters.length, "<br/> ");
+        letters.pop();
+        document.write(letters.length, "<br/> ");
+        document.write(letters, "<br/> ");
+        letters.push(10);
+        document.write(letters, "<br/> ");
+        letters.shift("x");
+        document.write(letters, "<br/> ");
+        letters.unshift("x");
+    </script>
+</body>
+
+</html>
