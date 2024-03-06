@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
     <style>
 
     </style>
@@ -15,15 +13,22 @@
     <form action="" method="post">
         <fieldset>
             <legend>Check Password</legend>
+
             <span>Password</span> <br>
             <input type="password" id="password"> <br>
+
             <span>Re Password</span> <br>
             <input type="password" id="repassword"> <br>
+
             <!-- <p style="color: red;" id="para"></p>
             <p style="color: green;" id="para1"></p> -->
+
             <br><br>
+
+            <!-- button  -->
             <input style="background-color: yellow; color: red;" type="button" value="submit" id="submit"
                 onclick="check('btn1')">
+
 
         </fieldset>
     </form>
@@ -32,18 +37,18 @@
     <script>
         function check(name) {
             if (name == "btn1") {
-                var pw1 = document.getElementById("password").value;
-                var pw2 = document.getElementById("repassword").value;
+                var pw1 = document.getElementById("password").value;    // get value of password
+                var pw2 = document.getElementById("repassword").value;  // get value of re password
 
-                if (pw1 == "" || pw2 == "") {
+                if (pw1 == "" || pw2 == "") { // this use for checking if password and re password value are null
                     // document.getElementById("para").innerHTML = "invalid"
                     // document.getElementById("para1").innerHTML = ""
                     alert("Invalid");
-                } else if (pw1 == pw2) {
+                } else if (pw1 == pw2) {    // this use for checking if password are equal each other 
                     // document.getElementById("para1").innerHTML = "valid"
                     // document.getElementById("para").innerHTML = ""
                     alert("Valid")
-                } else {
+                } else {                     // this use for checking if password are not equal each other 
                     // document.getElementById("para").innerHTML = "invalid"
                     // document.getElementById("para1").innerHTML = ""
                     alert("Invalid");
