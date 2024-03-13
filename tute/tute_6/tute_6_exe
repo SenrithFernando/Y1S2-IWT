@@ -1,0 +1,47 @@
+1. Write advantages of using PHP in web applications.
+
+    Performance. PHP scripting language is executed faster than scripts written in other coding languages such as ASP and JSP. 
+    Open-Source. 
+    Familiarity with the Syntax. 
+    Embedded. 
+    Platform Independent.
+    Database Support. 
+    Error Reporting.
+    Loosely Typed Language.
+
+2. Write the output from the following.
+<?php define("GREETING", "Welcome to IWT Module!", true);
+echo greeting;
+?>
+
+    have some error in code. 
+
+
+3. Explain the difference between == and === using a suitable example.
+
+    The main difference between the two operators is how they compare values. The == operator compares the values of two variables after performing type conversion if necessary. On the other hand, the === operator compares the values of two variables without performing type conversion.
+
+4. Define an array with 5 animals, "Lion","Wolf","Dog","Leopard" and "Tiger".
+
+a) Print the array using a foreach loop to get the following output.
+Lion
+Wolf
+Dog
+Leopard
+Tiger
+
+ $animal = array("Lion","Wolf","Dog","lepord","Tiger");
+
+ foreach($animal as $value){
+    echo "$value <br>";
+ }
+
+
+
+
+b). If the length of the animal is greater than 4, replace it with “Pass” and print the
+elements again.
+
+if(count($animal)>4){
+    echo "Pass";
+}
