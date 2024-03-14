@@ -11,16 +11,18 @@
     <script>
         var letters = ["A", "B", "C", "D"];
         letters[4] = 10;
+        letters[5] = "M";
 
         document.write(letters.length, "<br/> ");
         letters.pop();
         document.write(letters.length, "<br/> ");
         document.write(letters, "<br/> ");
-        letters.push(10);
+        letters.push(5);
         document.write(letters, "<br/> ");
-        letters.shift("x");
+        letters.shift();
         document.write(letters, "<br/> ");
-        letters.unshift("x");
+        letters.unshift("V");
+        document.write(letters, "<br/> ");
     </script>
 </body>
 
